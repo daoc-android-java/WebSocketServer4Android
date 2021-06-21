@@ -36,7 +36,6 @@ public class SaludosHandler extends TextWebSocketHandler {
             for(WebSocketSession s : allSessions) {
                 s.sendMessage(msg);
             }
-            
         } catch (Exception ex) {
             Logger.getLogger(SaludosHandler.class.getName()).log(Level.SEVERE, null, ex);
         }
